@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+}
+
+.crew-layout-container h5 {
+    position: relative;
+    left: 5vw;
+
+    color: white;
+    font-size: 22px;
+}
+
+.crew-layout-container span {
+    margin-right: 20px;
+
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+.crew-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew-description h4 {
+    margin: 0 0 10px 0;
+
+    color: rgb(255, 255, 255, 0.4);
+
+    font-size: 26px;
+}
+
+.crew-description h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 45px;
+}
+
+.crew-description p {
+    margin: 0 0 0 0;
+
+    width: 610px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav-heading {
+    display: flex;
+
+    margin-top: 30px;
+}
+
+.nav-dot {
+    width: 15px;
+    height: 15px;
+   
+    margin-right: 30px;
+
+    background-color: rgb(255, 255, 255, 0.4);
+
+    border-radius: 100%;
+}
+
+.nav-dot:hover {
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+#active-heading {
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255) 
+}
+
+.crew-preview {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 58.5vh;
+    min-height: 500px;
+
+    margin-top: 20px;
+}
+
+.crew-preview img {
+    height: 500px;
+}
+
+.crew-preview hr {
+    display: none;
+}

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+.technology-layout-container {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+}
+
+.technology-layout-container .title {
+    margin: 10px 0 20px 0;
+
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.technology-layout-container span {
+    margin-right: 20px;
+
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+.technology-description-container {
+    display: flex;
+    justify-content: center;
+}
+
+.technology-description-layout {
+    grid-row: 3;
+
+    margin: 0;
+}
+
+.nav-heading {
+    display: flex;
+    justify-content: center;
+
+    margin: 30px 0 0 0;
+}
+
+.nav-heading  button {
+    width: 50px;
+    height: 50px;
+
+    margin-right: 25px;
+
+    border: solid 1px rgb(255, 255, 255, 0.3);
+    border-radius: 100%;
+
+    color: white;
+    font-size: 25px;
+    font-family: 'Bellefair', serif;
+
+    background-color: #0B0D17;
+}
+
+.nav-heading button:hover {
+    border-color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.technology-description h5 {
+    margin: 30px 0 0 0;
+
+    font-size: 16px;
+
+    text-align: center;
+    
+}
+
+.technology-description h3 {
+    margin: 20px 0 0 0;
+
+    text-align: center;
+    font-size: 38px;
+}
+
+.technology-description p {
+    width: 90vw;
+
+    line-height: 30px;
+    text-align: center;
+}
+
+.technology-preview-container {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.technology-preview-container img {
+    position: relative;
+
+    width: 100vw;
+    
+}
+
+#active-heading {
+    background-color: white;
+
+    border: none;
+
+    color: black;
+}

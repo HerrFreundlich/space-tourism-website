@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+
+    min-height: 100vh; /* To prevent background-image from cutting off and repeating. */
+
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+/*-----Style Destination Preview-----*/
+
+.destination-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-preview-container h5 {
+    position: relative;
+    left: -25vw;
+
+    color: white;
+    font-size: 22px;
+}
+
+.destination-preview-container span {
+    margin-right: 20px;
+
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+.destination-preview-container img {
+    width: 250px;
+
+    position: relative;
+    right: 1vw;
+}
+
+/*-----Style Destination Description-----*/
+
+.destination-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.nav-heading {
+    display: flex;
+
+    margin-top: 40px;
+}
+
+.nav-heading p {
+    height: 30px;
+    margin: 0 30px 0 0;
+
+    color:rgb(208, 214, 249);
+}
+
+.detailed-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailed-description h2 {
+    margin: 4vh 0 0 0;
+
+    font-size: 80px;
+}
+
+.detailed-description  p {
+    width: 60vw;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.detailed-description hr {
+    width: 100%;
+
+    margin: 2vh 0 0 0;
+
+    color: rgb(208, 214, 249, 0.2);
+}
+
+.travel-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15vw;
+    text-align: center;
+    
+    margin: 3vh 0 0 0;
+}
+
+.travel-info p {
+    margin: 0;
+}
+
+.travel-info .subheading-2 {
+    color:rgb(208, 214, 249);
+}
+
+/*-----Style Different States-----*/
+
+.nav-heading p:hover {
+    cursor: pointer;
+
+    border-bottom: solid 2px rgb(255, 255, 255, 0.5);
+}
+
+#active-heading {
+    color: white;
+    border-bottom: solid 2px white;
+}

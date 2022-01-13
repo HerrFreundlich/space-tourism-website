@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+
+    overflow-x: hidden;
+
+    min-height: 100vh;
+}
+
+.crew-layout-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+}
+
+.crew-layout-container h5 {
+    grid-row: 1;
+
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.crew-layout-container span {
+    margin-right: 20px;
+
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+.crew-description {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+
+    grid-row: 3;
+}
+
+.crew-description h4 {
+    grid-row: 2;
+    grid-column: 1;
+
+    margin: 0 0 10px 0;
+
+    color: rgb(255, 255, 255, 0.4);
+
+    font-size: 24px;
+}
+
+.crew-description h3 {
+    grid-row: 2;
+    grid-column: 1;
+
+    margin: 50px 0 10px 0;
+
+    font-size: 38px;
+}
+
+.crew-description p {
+    grid-row: 2;
+    grid-column: 1;
+
+    margin: 100px 0 0 0;
+
+    width: 80vw;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav-heading {
+    display: flex;
+    grid-row: 1;
+
+    margin-top: 30px;
+}
+
+.nav-dot {
+    width: 15px;
+    height: 15px;
+   
+    margin-right: 30px;
+
+    background-color: rgb(255, 255, 255, 0.4);
+
+    border-radius: 100%;
+}
+
+.nav-dot:hover {
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+#active-heading {
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255) 
+}
+
+.crew-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    grid-row: 2;
+    min-height: 446px;
+}
+
+.crew-preview img {
+    width: 300px;
+}
+
+.crew-preview hr {
+    width: 80vw;
+     
+    margin: 0;
+
+    opacity: 0.;
+}
