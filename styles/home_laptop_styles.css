@@ -2,7 +2,7 @@
 body {
     margin: 0;
 
-    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-tablet.jpg");
     background-size: cover;
 
     min-height: 100vh;
@@ -30,7 +30,7 @@ p {
 }
 
 button {
-    margin: 70px 0 0 0;
+    margin: 70px 0 8vh 0;
     width: 225px;
     height: 225px;
 

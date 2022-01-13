@@ -88,7 +88,7 @@ body {
 }
 
 .technology-description p {
-    width: 410px;
+    width: 30vw;
 
     line-height: 30px;
 }
@@ -108,7 +108,7 @@ body {
     position: relative;
 
     width: 35vw;
-    min-width: 500px;
+    min-width: 480px;
 }
 
 #active-heading {

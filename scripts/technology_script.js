@@ -1,8 +1,8 @@
 // Makes sure image is correctly displayed when site is loaded
 document.addEventListener("DOMContentLoaded", function() {
-    if (window.matchMedia("(min-width: 1201px)").matches) {
+    if (window.matchMedia("(min-width: 1001px)").matches) {
         document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-launch-vehicle-portrait.jpg");  
-    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+    } else if (window.matchMedia("(max-width: 1000px)").matches) {
         document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-launch-vehicle-landscape.jpg");
     }
 });
@@ -13,41 +13,41 @@ window.addEventListener("resize", function() {
 
     switch (nameClass) {
         case "launch-vehicle":
-            if (window.matchMedia("(min-width: 1201px)").matches) {
+            if (window.matchMedia("(min-width: 1001px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-launch-vehicle-portrait.jpg");
                 document.querySelector(".technology-preview-container img").style.width = 35 + "vw";
-            } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+            } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-launch-vehicle-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 810 + "px";
-            } else if (window.matchMedia("(max-width: 800px)").matches) {
+                document.querySelector(".technology-preview-container img").style.width = 85 + "vw";
+            } else if (window.matchMedia("(max-width: 600px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-launch-vehicle-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 100 + "vw";
+                document.querySelector(".technology-preview-container img").style.width = 95 + "vw";
             }
         break;
                 
         case "spaceport":
-            if (window.matchMedia("(min-width: 1201px)").matches) {
+            if (window.matchMedia("(min-width: 1001px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-spaceport-portrait.jpg");
                 document.querySelector(".technology-preview-container img").style.width = 35 + "vw";
-            } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+            } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-spaceport-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 810 + "px";
-            } else if (window.matchMedia("(max-width: 800px)").matches) {
+                document.querySelector(".technology-preview-container img").style.width = 85 + "vw";
+            } else if (window.matchMedia("(max-width: 600px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-spaceport-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 100 + "vw";
+                document.querySelector(".technology-preview-container img").style.width = 95 + "vw";
             }
         break;
 
         case "space-capsule":
-            if (window.matchMedia("(min-width: 1201px)").matches) {
+            if (window.matchMedia("(min-width: 1001px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-space-capsule-portrait.jpg");
                 document.querySelector(".technology-preview-container img").style.width = 35 + "vw";
-            } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+            } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-space-capsule-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 810 + "px";
-            } else if (window.matchMedia("(max-width: 800px)").matches) {
+                document.querySelector(".technology-preview-container img").style.width = 85 + "vw";
+            } else if (window.matchMedia("(max-width: 600px)").matches) {
                 document.querySelector(".technology-preview-container img").setAttribute("src", "assets/technology/image-space-capsule-landscape.jpg");
-                document.querySelector(".technology-preview-container img").style.width = 100 + "vw";
+                document.querySelector(".technology-preview-container img").style.width = 95 + "vw";
             }
         break;
     }
@@ -69,11 +69,11 @@ for (i = 0; i < document.querySelectorAll(".nav-heading button").length; i++) {
 
             switch (nameClass) {
                 case "launch-vehicle":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(nameClass);
-                    } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                         imageSwipeAnimationLaptop(nameClass);
-                    } else if (window.matchMedia("(max-width: 800px)").matches) {
+                    } else if (window.matchMedia("(max-width: 600px)").matches) {
                         imageSwipeAnimationMobile(nameClass);
                     }
                     document.querySelector(".technology-description h3").innerHTML = "LAUNCH VEHICLE";
@@ -81,11 +81,11 @@ for (i = 0; i < document.querySelectorAll(".nav-heading button").length; i++) {
                 break;
 
                 case "spaceport":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(nameClass);
-                    } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                         imageSwipeAnimationLaptop(nameClass);
-                    } else if (window.matchMedia("(max-width: 800px)").matches) {
+                    } else if (window.matchMedia("(max-width: 600px)").matches) {
                         imageSwipeAnimationMobile(nameClass);
                     }
                     document.querySelector(".technology-description h3").innerHTML = "SPACEPORT";
@@ -93,11 +93,11 @@ for (i = 0; i < document.querySelectorAll(".nav-heading button").length; i++) {
                 break;
 
                 case "space-capsule":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(nameClass);
-                    } else if (window.matchMedia("(min-width: 801px) and (max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(min-width: 601px) and (max-width: 1000px)").matches) {
                         imageSwipeAnimationLaptop(nameClass);
-                    } else if (window.matchMedia("(max-width: 800px)").matches) {
+                    } else if (window.matchMedia("(max-width: 600px)").matches) {
                         imageSwipeAnimationMobile(nameClass);
                     }
                     document.querySelector(".technology-description h3").innerHTML = "SPACE CAPSULE";
@@ -155,7 +155,7 @@ function imageSwipeAnimationLaptop(newImgSource) {
     var newElement = document.createElement("img");
     newElement.setAttribute("src", "assets/technology/image-" + newImgSource + "-landscape.jpg");
     newElement.style.position = "relative";
-    newElement.style.width = 810 + "px";
+    newElement.style.width = 85 + "vw";
     newElement.style.right = -80 + "vw";
     var newElementPosition = -80; // vw
 
@@ -193,7 +193,7 @@ function imageSwipeAnimationMobile(newImgSource) {
     var newElement = document.createElement("img");
     newElement.setAttribute("src", "assets/technology/image-" + newImgSource + "-landscape.jpg");
     newElement.style.position = "relative";
-    newElement.style.width = 100 + "vw";
+    newElement.style.width = 95 + "vw";
     newElement.style.right = -80 + "vw";
     var newElementPosition = -80; // vw
 

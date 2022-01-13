@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Makes sure Navbar is displayed correctly when window is resized
 window.addEventListener("resize", function() {
-    if (window.matchMedia("(min-width: 801px)").matches) {
+    if (window.matchMedia("(min-width: 601px)").matches) {
         document.querySelector(".navbar").style.display = "flex";
     } else {
         if (document.querySelector(".navbar-icon").hasAttribute("id")) {

@@ -18,7 +18,7 @@ body {
     margin: 10px 0 20px 0;
 
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -82,7 +82,7 @@ body {
     margin: 20px 0 0 0;
 
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 .technology-description p {
@@ -102,7 +102,7 @@ body {
 .technology-preview-container img {
     position: relative;
 
-    width: 100vw;
+    width: 95vw;
     
 }
 

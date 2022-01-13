@@ -2,16 +2,16 @@
 body {
     margin: 0;
 
+    height: 97vh;
+
     background-image: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
-
-    min-height: 100vh;
-
-    overflow: hidden;
 }
 
 h5 {
     margin: 0;
+
+    font-size: 27px;
 }
 
 h1{
@@ -21,16 +21,17 @@ h1{
 p {
     margin: 10px 0 0 0;
 
-    width: 600px;
+    width: 450px;
 
     line-height: 30px;
 }
 
 button {
-    position: absolute;
-    margin: 10% 0 0 75%;
-    width: 225px;
-    height: 225px;
+    align-self: flex-end;
+    justify-self: center;
+
+    width: 250px;
+    height: 250px;
 
     border-radius: 100%;
     border: none;
@@ -52,8 +53,11 @@ button:active {
 }
 
 .home-layout-container {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
-    margin: 18% 0 0 8%;
+    margin-top: 35vh;
+    margin-bottom: 10vh;
+    padding-left: 100px;
 }
