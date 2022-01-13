@@ -3,7 +3,7 @@ body {
 
     min-height: 100vh; /* To prevent background-image from cutting off and repeating. */
 
-    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
     background-size: cover;
 
     overflow-x: hidden;

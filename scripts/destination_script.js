@@ -82,7 +82,7 @@ function imageSwipeAnimationDesktop(newImgSource) {
 
     var newElement = document.createElement("img");
     newElement.setAttribute("id", "picture");
-    newElement.setAttribute("src", "../../assets/destination/image-" + newImgSource.toLowerCase() + ".png");
+    newElement.setAttribute("src", "assets/destination/image-" + newImgSource.toLowerCase() + ".png");
     newElement.style.right = -40 + "vw";
     document.querySelector(".destination-preview-container").appendChild(newElement);
 
@@ -123,7 +123,7 @@ function imageSwipeAnimationMobile(newImgSource) {
 
     var newElement = document.createElement("img");
     newElement.setAttribute("id", "picture");
-    newElement.setAttribute("src", "../../assets/destination/image-" + newImgSource.toLowerCase() + ".png");
+    newElement.setAttribute("src", "assets/destination/image-" + newImgSource.toLowerCase() + ".png");
     newElement.style.right = -62 + "vw";
     var newElementPosition = -62; // vw
     

@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var siteLocation = window.location.href;
 
-    if (siteLocation.includes("home")) {
+    if (siteLocation.includes("index")) {
         document.getElementById("home").classList.add("navbar-active");
     } else if (siteLocation.includes("destination")) {
         document.getElementById("destination").classList.add("navbar-active");
@@ -30,11 +30,11 @@ window.addEventListener("resize", function() {
 document.querySelector(".navbar-icon").addEventListener("click", function() {
     if (this.hasAttribute("id")) {
         this.removeAttribute("id");
-        this.setAttribute("src", "../../assets/shared/icon-hamburger.svg")
+        this.setAttribute("src", "assets/shared/icon-hamburger.svg")
         document.querySelector(".navbar").style.display = "none";
     } else {
         this.setAttribute("id", "active");
-        this.setAttribute("src", "../../assets/shared/icon-close.svg")
+        this.setAttribute("src", "assets/shared/icon-close.svg")
         document.querySelector(".navbar").style.display = "revert";
     }
 });

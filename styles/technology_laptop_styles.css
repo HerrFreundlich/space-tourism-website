@@ -1,7 +1,7 @@
 body {
     margin: 0;
 
-    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
     background-size: cover;
 
     min-height: 100vh;

@@ -69,7 +69,7 @@ function imageFadeAnimationDesktop(newImgSource) {
     var oldElementOpacity = 1;
 
     var newElement = document.createElement("img");
-    newElement.setAttribute("src", "../../assets/crew/image-" + newImgSource + ".png");
+    newElement.setAttribute("src", "assets/crew/image-" + newImgSource + ".png");
     newElement.style.opacity = 0;
     var newElementOpacity = 0;
 
@@ -102,7 +102,7 @@ function imageFadeAnimationLaptop(newImgSource) {
     var oldElementOpacity = 1;
 
     var newElement = document.createElement("img");
-    newElement.setAttribute("src", "../../assets/crew/image-" + newImgSource + ".png");
+    newElement.setAttribute("src", "assets/crew/image-" + newImgSource + ".png");
     newElement.style.opacity = 0;
     var newElementOpacity = 0;
 
