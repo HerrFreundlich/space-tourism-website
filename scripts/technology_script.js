@@ -1,3 +1,9 @@
+
+// Preload animated images into cache
+var imageSrcs = ["assets/technology/image-launch-vehicle-landscape.png", "assets/technology/image-launch-vehicle-portrait.png", "assets/technology/image-space-capsule-landscape.png", 
+"assets/technology/image-space-capsule-portrait.png", "assets/technology/image-spaceport-landscape.png", "assets/technology/image-spaceport-portrait.png"];
+preloadImages(imageSrcs);
+
 // Makes sure image is correctly displayed when site is loaded
 document.addEventListener("DOMContentLoaded", function() {
     if (window.matchMedia("(min-width: 1001px)").matches) {
@@ -219,5 +225,17 @@ function imageSwipeAnimationMobile(newImgSource) {
             newElementPosition += 5; // Speed of Animation
             newElement.style.right = newElementPosition + "vw";
         }
+    }
+}
+
+function preloadImages(srcs) {
+    if (!preloadImages.cache) {
+        preloadImages.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        preloadImages.cache.push(img);
     }
 }

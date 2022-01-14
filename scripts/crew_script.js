@@ -1,4 +1,8 @@
 
+// Preload animated images into cache
+var imageSrcs = ["assets/crew/image-anousheh-ansari.png", "assets/crew/image-douglas-hurley.png", "assets/crew/image-mark-shuttleworth.png", "assets/crew/image-victor-glover.png"];
+preloadImages(imageSrcs);
+
 // Event Handler to initate state changes and animations
 for (i = 0; i < document.querySelectorAll(".nav-dot").length; i++) {
     document.querySelectorAll(".nav-dot")[i].addEventListener("click", function() {
@@ -129,5 +133,17 @@ function imageFadeAnimationLaptop(newImgSource) {
             newElementOpacity += 0.1; // Speed of Animation
             newElement.style.opacity = newElementOpacity;
         }
+    }
+}
+
+function preloadImages(srcs) {
+    if (!preloadImages.cache) {
+        preloadImages.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        preloadImages.cache.push(img);
     }
 }
