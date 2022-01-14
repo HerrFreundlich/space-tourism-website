@@ -57,7 +57,7 @@ body {
 
     margin: 50px 0 10px 0;
 
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .crew-description p {
@@ -109,11 +109,11 @@ body {
     justify-content: end;
 
     grid-row: 2;
-    min-height: 446px;
+    min-height: 407px;
 }
 
 .crew-preview img {
-    width: 300px;
+    width: 60vw;
 }
 
 .crew-preview hr {
