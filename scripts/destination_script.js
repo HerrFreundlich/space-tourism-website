@@ -1,7 +1,11 @@
 
-animationDone = true;
+// Preload animated images into cache
+var imageSrcs = ["assets/destination/image-moon.png", "assets/destination/image-mars.png", "assets/destination/image-europa.png", "assets/destination/image-titan.png"];
+preloadImages(imageSrcs);
 
 // Event Handler to initate state changes and animations
+animationDone = true;
+
 for (i = 0; i < document.querySelectorAll(".nav-text").length; i++) {
     document.querySelectorAll(".nav-text")[i].addEventListener("click", function() {
         // Multiple checks to prevent bugs
@@ -153,5 +157,17 @@ function imageSwipeAnimationMobile(newImgSource) {
             newElementPosition += 3; // Speed of Animation
             newElement.style.right = newElementPosition + "vw";
         }
+    }
+}
+
+function preloadImages(srcs) {
+    if (!preloadImages.cache) {
+        preloadImages.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        preloadImages.cache.push(img);
     }
 }

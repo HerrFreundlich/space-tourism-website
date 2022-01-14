@@ -109,7 +109,7 @@ body {
     justify-content: end;
 
     grid-row: 2;
-    min-height: 407px;
+    min-height: 49vh;
 }
 
 .crew-preview img {
