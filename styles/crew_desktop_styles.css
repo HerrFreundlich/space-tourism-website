@@ -12,7 +12,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.4fr;
 
-    height: 91vh;
+    height: 96.5vh;
 }
 
 .crew-layout-container h5 {
@@ -34,6 +34,8 @@ body {
 
 .crew-description {
     grid-column: 1;
+
+    position: relative;
     
     width: 50%;
     padding-left: 10vw;
@@ -60,8 +62,7 @@ body {
 .nav-heading {
     display: flex;
 
-    position: absolute;
-    bottom: 15vh;
+    margin-top: 10vh;
 }
 
 .nav-dot {
@@ -93,6 +94,10 @@ body {
     align-items: flex-end;
 
     grid-column: 2;
+}
+
+.crew-preview img {
+    width: 400;
 }
 
 .crew-preview hr {
