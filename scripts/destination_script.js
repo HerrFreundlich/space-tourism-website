@@ -3,6 +3,19 @@
 var imageSrcs = ["assets/destination/image-moon.png", "assets/destination/image-mars.png", "assets/destination/image-europa.png", "assets/destination/image-titan.png"];
 preloadImages(imageSrcs);
 
+// Makes sure images are corrctley displayed when windows is resized
+window.addEventListener("resize", function() {
+    if (this.matchMedia("(min-width: 1001px)").matches) {
+        document.querySelector(".destination-preview-container img").style.position = "absolute";
+        document.querySelector(".destination-preview-container img").style.top = 35 + "vh";
+        document.querySelector(".destination-preview-container img").style.right = 53 + "vw";
+    } else if (this.matchMedia("(max-width: 1000px)").matches) {
+        document.querySelector(".destination-preview-container img").style.position = "relative";
+        document.querySelector(".destination-preview-container img").style.top = "revert";
+        document.querySelector(".destination-preview-container img").style.right = 1 + "vw";
+    }
+});
+
 // Event Handler to initate state changes and animations
 animationDone = true;
 
@@ -18,10 +31,10 @@ for (i = 0; i < document.querySelectorAll(".nav-text").length; i++) {
 
             switch (paragraphInnerHTML) {
                 case "MOON":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(paragraphInnerHTML);
                         
-                    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(max-width: 1000px)").matches) {
                         imageSwipeAnimationMobile(paragraphInnerHTML);
                         
                     }
@@ -33,10 +46,10 @@ for (i = 0; i < document.querySelectorAll(".nav-text").length; i++) {
                 break;
 
                 case "MARS":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(paragraphInnerHTML);
                         
-                    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(max-width: 1000px)").matches) {
                         imageSwipeAnimationMobile(paragraphInnerHTML);
                         
                     }
@@ -48,10 +61,10 @@ for (i = 0; i < document.querySelectorAll(".nav-text").length; i++) {
                 break;
 
                 case "EUROPA":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(paragraphInnerHTML);
                         
-                    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(max-width: 1000px)").matches) {
                         imageSwipeAnimationMobile(paragraphInnerHTML);
                         
                     }
@@ -63,10 +76,10 @@ for (i = 0; i < document.querySelectorAll(".nav-text").length; i++) {
                 break;
 
                 case "TITAN":
-                    if (window.matchMedia("(min-width: 1201px)").matches) {
+                    if (window.matchMedia("(min-width: 1001px)").matches) {
                         imageSwipeAnimationDesktop(paragraphInnerHTML);
 
-                    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+                    } else if (window.matchMedia("(max-width: 1000px)").matches) {
                         imageSwipeAnimationMobile(paragraphInnerHTML);
                     }
 
@@ -90,8 +103,8 @@ function imageSwipeAnimationDesktop(newImgSource) {
     newElement.style.right = -40 + "vw";
     document.querySelector(".destination-preview-container").appendChild(newElement);
 
-    var oldElementPosition = 59; // vw
-    var newElementPosition = -40; // vw
+    var oldElementPosition = 53; // vw
+    var newElementPosition = -42; // vw
     var oldElement = document.querySelectorAll(".destination-preview-container img")[0];
     var newElement = document.querySelectorAll(".destination-preview-container img")[1];
 
@@ -110,9 +123,9 @@ function imageSwipeAnimationDesktop(newImgSource) {
     }
 
     function newElementFrame() {
-        if (newElementPosition >= 59) {
+        if (newElementPosition >= 53) {
             clearInterval(newInterval_Id);
-            newElement.style.right = "revert"; // To make sure image is correctly displayed when window is resized
+
             animationDone = true;
         } else {
             newElementPosition += 3; // Speed of Animation

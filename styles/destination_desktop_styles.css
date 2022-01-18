@@ -26,7 +26,7 @@ body {
 
 .destination-preview-container h5 {
     position: relative;
-    left: -150px;
+    left: -10vw;
     top: -35vh;
 
     color: white;
@@ -43,7 +43,7 @@ body {
 .destination-preview-container img {
     position: absolute;
     top: 35vh;
-    right: 59vw;
+    right: 53vw;
 }
 
 /*-----Style Destination Description-----*/
@@ -76,7 +76,7 @@ body {
 }
 
 .detailed-description  p {
-    width: 60%;
+    width: 370px;
     line-height: 30px;
 
     position: relative;
@@ -84,7 +84,7 @@ body {
 }
 
 .detailed-description hr {
-    width: 60%;
+    width: 370px;
     margin: 5vh 0 0 0;
 
     color: rgb(208, 214, 249, 0.2);
@@ -95,10 +95,10 @@ body {
 
 .travel-info {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    width: 60%;
+    width: 370px;
     margin: 3vh 0 0 0;
 }
 

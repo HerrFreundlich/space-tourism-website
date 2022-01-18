@@ -84,6 +84,7 @@ function imageFadeAnimationDesktop(newImgSource) {
             clearInterval(oldInterval_Id);
             document.querySelector(".crew-preview").removeChild(oldElement);
             document.querySelector(".crew-preview").appendChild(newElement);
+            document.querySelector(".crew-preview").insertBefore(newElement, document.querySelector(".crew-preview hr"));
             newInterval_Id = setInterval(fadeIn, 10);
         } else {
             oldElementOpacity -= 0.1; // Speed of Animation
